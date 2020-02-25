@@ -1,0 +1,12 @@
+[all]
+
+job_search = INSERT_JOB_SEARCH
+job_search_location = INSERT_JOB_SEARCH_LOCATION
+
+
+chromedriver_path = INSERT_CHROMEDRIVER_PATH
+
+[linked_in]
+
+username = INSERT_LINKEDIN_USERNAME
+password = INSERT_LINKEDIN_PASSWORD
