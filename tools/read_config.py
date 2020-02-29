@@ -12,9 +12,7 @@ from definitions import *
 ###############################################################################
 ###############################################################################
 
-config_file_path = os.path.join(CONF_DIR, 'config.ini')
-
-def initialize_config(config_file_path=config_file_path):
+def initialize_config(config_file_path):
 
     '''
     Used to read a config file and return the ConfigParser variable

@@ -33,7 +33,7 @@ important_button_classes_reversed = {b:a for a, b in important_button_classes.it
 
 class LinkedInDriver(object):
 
-    def __init__(self, linked_in_username, linked_in_password, headless = False):
+    def __init__(self, chromedriver_path, linked_in_username, linked_in_password, headless = False):
 
         self.linked_in_username = linked_in_username
         self.linked_in_password = linked_in_password
@@ -41,7 +41,7 @@ class LinkedInDriver(object):
         chrome_options = Options()
         if headless:
             chrome_options.add_argument("--headless")
-        driver = webdriver.Chrome(options=chrome_options,executable_path="/Users/coledurant/Desktop/Other/PML/chromedriver.exe")
+        driver = webdriver.Chrome(options=chrome_options,executable_path=chromedriver_path)
         options = Options()
 
         self.driver = driver
