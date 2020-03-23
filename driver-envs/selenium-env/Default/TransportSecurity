@@ -1,0 +1,74 @@
+{
+   "+ccWXqaoHJ9hfuXbleKV6FQUrBlyXAJ31BdqjNQJpHs=": {
+      "expiry": 1616504390.676864,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1584968390.676865
+   },
+   "5EdUoB7YUY9zZV+2DkgVXgho8WUvp+D+6KpeUOhNQIM=": {
+      "expiry": 1616504499.294621,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1584968499.294623
+   },
+   "8/RrMmQlCD2Gsp14wUCE1P8r7B2C5+yE0+g79IPyRsc=": {
+      "expiry": 1616504499.221719,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1584968499.22172
+   },
+   "9jFJneXMVHTXLZTJwwlFuScHMcN/99brFSgqRKTizGw=": {
+      "expiry": 1616504446.832265,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1584968446.832268
+   },
+   "TZmujbl93Yt3JI8wZ4X/zjkA0WFNGNW44A+o7h4YyHw=": {
+      "expiry": 1616504507.884515,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1584968507.884518
+   },
+   "TtEzPuxlmH4jU1fhSjfb5XnoZKcMKbHFfwr5VGnotSA=": {
+      "expect_ct": {
+         "expect_ct_enforce": false,
+         "expect_ct_expiry": 1585573306.251723,
+         "expect_ct_observed": 1584968506.251723,
+         "expect_ct_report_uri": "https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      },
+      "expiry": 0.0,
+      "mode": "default",
+      "sts_include_subdomains": false,
+      "sts_observed": 0.0
+   },
+   "YHSMTQnYC85xpfxQXKcYuC0wBIhWAWiCTB+UjCnXwn0=": {
+      "expiry": 1616504502.772299,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1584968502.772301
+   },
+   "nAuqgR4iEWti7SOdT3UHPl6rmZU/DeaIm38P2O2OkgA=": {
+      "expiry": 1616504390.442872,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1584968390.442873
+   },
+   "tXjOdUMSBgtiUbrbGkl6XP80fiDB8uXOkUbnCf0IKvw=": {
+      "expect_ct": {
+         "expect_ct_enforce": false,
+         "expect_ct_expiry": 1585054994.106032,
+         "expect_ct_observed": 1584968594.106032,
+         "expect_ct_report_uri": "https://www.linkedin.com/platform-telemetry/ct"
+      },
+      "expiry": 1587560594.106024,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1584968594.106026
+   },
+   "y12B/2jqhoQhsoKgdTjVSWE7xfk5BMq4s243/UjNUHU=": {
+      "expiry": 1616504507.395749,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1584968507.395752
+   }
+}

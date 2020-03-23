@@ -6,7 +6,8 @@ import re
 import numpy as np
 import matplotlib.pyplot as plt
 import time
-
+import os
+from definitions import *
 # Driver imports
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
@@ -35,39 +36,47 @@ class LinkedInDriver(object):
 
     def __init__(self, chromedriver_path, linked_in_username, linked_in_password, headless = False):
 
+        self.driver_path = chromedriver_path
         self.linked_in_username = linked_in_username
         self.linked_in_password = linked_in_password
 
+
+        os.chdir(DRIVER_DIR)
+
+        driver_env_dir_list = os.listdir()
+
+
         chrome_options = Options()
+        chrome_options.add_argument("user-data-dir=selenium-env")
         if headless:
             chrome_options.add_argument("--headless")
-        driver = webdriver.Chrome(options=chrome_options,executable_path=chromedriver_path)
-        options = Options()
-
-        self.driver = driver
-
-        self.linkedin_log_in()
+        self.driver = webdriver.Chrome(options=chrome_options,executable_path=self.driver_path)
 
 
-    def linkedin_log_in(self, sleep_amount = 0):
+        # Logging in if needed
+        if 'selenium-env' not in driver_env_dir_list:
 
-        print("Logging into LinkedIn page...")
+            #Open the instagram login page
+            self.driver.get('https://www.linkedin.com/login')
 
-        self.driver.get('https://www.linkedin.com/login')
-
-        time.sleep(sleep_amount)
+            time.sleep(1)
 
 
-        username = self.driver.find_element_by_id("username")
-        password = self.driver.find_element_by_id("password")
+            username = self.driver.find_element_by_id("username")
+            password = self.driver.find_element_by_id("password")
 
-        username.send_keys(self.linked_in_username)
-        password.send_keys(self.linked_in_password)
+            username.send_keys(self.linked_in_username)
+            password.send_keys(self.linked_in_password)
 
-        log_in_button = self.driver.find_element_by_xpath("//button[@class='btn__primary--large from__button--floating']")
-        log_in_button.click()
+            log_in_button = self.driver.find_element_by_xpath("//button[@class='btn__primary--large from__button--floating']")
+            log_in_button.click()
 
-        return None
+        else:
+
+            self.driver.get('https://www.linkedin.com')
+
+            time.sleep(2)
+
 
 
     def press_button(self, button_class):
